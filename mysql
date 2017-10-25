@@ -1,0 +1,48 @@
+
+https://segmentfault.com/a/1190000002413519    github的协同开发功能，大家都看一下，然后根据上面说的fork，共同提交。
+
+create table Users
+    -> (Uid int not null auto_increment primary key,
+    -> Username varchar(16) not null unique,
+    -> Password varchar(16) not null,
+    -> Nickname varchar(16) not null,
+    -> RegistTime timestamp not null default now(),
+    -> Effective int not null default 1)default charset = utf8;
+
+
+> create table Friends
+    -> (Usero int not null,
+    -> Usert int not null,
+    -> Flag int not null default 2,
+    -> primary key(Usero,Usert),
+    -> constraint Usero_uid foreign key(Usero) references Users(Uid),
+    -> constraint Usert_uid foreign key(Usert) references Users(Uid)
+    -> )engine = MyISAM default charset = utf8;
+
+
+
+> create table Groups
+    -> (Gid varchar(16) not null primary key,
+    -> Gname varchar(16) not null)default charset = utf8;
+
+> create table Gmember                                                        
+    -> (Gid varchar(16) not null,
+    -> Uid int not null,
+    -> primary key(Gid,Uid),
+    -> constraint Gid_f foreign key(Gid) references Groups(Gid),
+    -> constraint Uid_f foreign key(Uid) references Users(Uid)
+    -> )default charset = utf8;
+
+ create table RedPacket
+    -> (Rid int not null auto_increment primary key,
+    -> Uid int not null,
+    -> Money decimal(7,2) not null,
+    -> Count int not null,
+    -> LeftMoney decimal(7,2) not null,
+    -> Rtime timestamp not null default now(),
+    -> Flag int not null default 0,
+    -> constraint Uid_fo foreign key(Uid) references Users(Uid)
+    -> )default charset = utf8;
+
+alter table Friends add index u_friends(Usero,Usert);//此索引用于搜索某个用户的所有好友(不管单向还是双向），因为这个索引只展示所有好友，当发消息时就只给flag = 2 的好友发送。注：Friends表中engine(引擎)要用MyISAM，where语句中有or时才执行索引。
+
