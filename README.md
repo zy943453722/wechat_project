@@ -11,7 +11,7 @@
 8. 支持用户查看红包历史记录
 
 ### 功能模块图：
-![图3](https://github.com/zy943453722/wechat_project/功能模块.png)
+![图3](https://github.com/zy943453722/wechat_project/blob/master/功能模块.png)
 ### 数据库设计任务：
 
 建库：1个----WeChat
@@ -30,10 +30,10 @@
 
 ***数据字典：***
 
-![图1](https://github.com/zy943453722/wechat_project/数据字典.png)
+![图1](https://github.com/zy943453722/wechat_project/blob/master/数据字典.png)
 
 ***E-R图：***
-![图2](https://github.com/zy943453722/wechat_project/E-R.png)
+![图2](https://github.com/zy943453722/wechat_project/blob/master/E-R.png)
 ### 文件结构分布：
 **.h文件:<br>**
 * mysql.h (封装数据库)
