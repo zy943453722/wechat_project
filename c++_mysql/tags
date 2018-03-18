@@ -1,0 +1,329 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DBI_DATE	dbi_mysql.h	/^}DBI_DATE;$/;"	t	typeref:struct:_dbi_date
+DBI_ERROR	dbi_mysql.h	/^	DBI_ERROR = -1,				\/\/ 操作错误，可以调用 dbi_error方法获取错误信息$/;"	e	enum:dbi_ret_code
+DBI_FETCH_EOF	dbi_mysql.h	/^	DBI_FETCH_EOF = 1,			\/\/ 游标到达结果集尾部，遍历完毕$/;"	e	enum:dbi_ret_code
+DBI_FLAG_NOTNULL	dbi_mysql.h	/^    DBI_FLAG_NOTNULL = 0,          \/* 标识一个数据为非null值 *\/$/;"	e	enum:DBI_FLAG_TYPE
+DBI_FLAG_NULL	dbi_mysql.h	/^    DBI_FLAG_NULL = -1,            \/* 标识一个值为null 值*\/$/;"	e	enum:DBI_FLAG_TYPE
+DBI_FLAG_TRUNCATE	dbi_mysql.h	/^    DBI_FLAG_TRUNCATE = 1          \/* 表示数据被数据库截断*\/$/;"	e	enum:DBI_FLAG_TYPE
+DBI_FLAG_TYPE	dbi_mysql.h	/^typedef enum DBI_FLAG_TYPE$/;"	g
+DBI_FLAG_UNDEF	dbi_mysql.h	/^    DBI_FLAG_UNDEF = -2,$/;"	e	enum:DBI_FLAG_TYPE
+DBI_PRIMARYKEY_EXIST	dbi_mysql.h	/^	DBI_PRIMARYKEY_EXIST = 2,	\/\/ 主键记录已存在$/;"	e	enum:dbi_ret_code
+DBI_RET_CODE	dbi_mysql.h	/^}DBI_RET_CODE;$/;"	t	typeref:enum:dbi_ret_code
+DBI_SUCCESS	dbi_mysql.h	/^	DBI_SUCCESS = 0,			\/\/ 操作成功$/;"	e	enum:dbi_ret_code
+DBI_mysql	dbi_mysql.cpp	/^DBI_mysql::DBI_mysql(void) : _conn(NULL), _stmt(NULL)$/;"	f	class:DBI_mysql	signature:(void)
+DBI_mysql	dbi_mysql.h	/^	DBI_mysql(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+DBI_mysql	dbi_mysql.h	/^class DBI_mysql$/;"	c
+DBI_mysql::DBI_mysql	dbi_mysql.cpp	/^DBI_mysql::DBI_mysql(void) : _conn(NULL), _stmt(NULL)$/;"	f	class:DBI_mysql	signature:(void)
+DBI_mysql::DBI_mysql	dbi_mysql.h	/^	DBI_mysql(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+DBI_mysql::_conn	dbi_mysql.h	/^	MYSQL*		_conn;$/;"	m	class:DBI_mysql	access:private
+DBI_mysql::_res	dbi_mysql.h	/^	MYSQL_RES*	_res;$/;"	m	class:DBI_mysql	access:private
+DBI_mysql::_row	dbi_mysql.h	/^	MYSQL_ROW	_row;$/;"	m	class:DBI_mysql	access:private
+DBI_mysql::_stmt	dbi_mysql.h	/^	MYSQL_STMT* _stmt;$/;"	m	class:DBI_mysql	access:private
+DBI_mysql::clearerr	dbi_mysql.cpp	/^inline void DBI_mysql::clearerr(void)$/;"	f	class:DBI_mysql	signature:(void)
+DBI_mysql::clearerr	dbi_mysql.h	/^	void clearerr(void);$/;"	p	class:DBI_mysql	access:private	signature:(void)
+DBI_mysql::db_autocommit	dbi_mysql.cpp	/^bool DBI_mysql::db_autocommit(bool flag)\/\/批控制自动提交（可设置是否能自动提交）$/;"	f	class:DBI_mysql	signature:(bool flag)
+DBI_mysql::db_autocommit	dbi_mysql.h	/^	 bool db_autocommit(bool flag);$/;"	p	class:DBI_mysql	access:public	signature:(bool flag)
+DBI_mysql::db_begin	dbi_mysql.cpp	/^int DBI_mysql::db_begin(void)\/\/设置是否自动提交$/;"	f	class:DBI_mysql	signature:(void)
+DBI_mysql::db_begin	dbi_mysql.h	/^	 int db_begin(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+DBI_mysql::db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, DBI_DATE*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, DBI_DATE*& val)
+DBI_mysql::db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, char*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, char*& val)
+DBI_mysql::db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, double*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, double*& val)
+DBI_mysql::db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, float*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, float*& val)
+DBI_mysql::db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, int*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, int*& val)
+DBI_mysql::db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, long int*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, long int*& val)
+DBI_mysql::db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, long long*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, long long*& val)
+DBI_mysql::db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, DBI_DATE*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, DBI_DATE*& val)
+DBI_mysql::db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, char*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, char*& val)
+DBI_mysql::db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, double*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, double*& val)
+DBI_mysql::db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, float*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, float*& val)
+DBI_mysql::db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, int*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, int*& val)
+DBI_mysql::db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, long int*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long int*& val)
+DBI_mysql::db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, long long*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long long*& val)
+DBI_mysql::db_close_cursor	dbi_mysql.cpp	/^int DBI_mysql::db_close_cursor(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+DBI_mysql::db_close_cursor	dbi_mysql.cpp	/^void DBI_mysql::db_close_cursor(void)$/;"	f	class:DBI_mysql	signature:(void)
+DBI_mysql::db_close_cursor	dbi_mysql.h	/^	 int db_close_cursor(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+DBI_mysql::db_close_cursor	dbi_mysql.h	/^	 void db_close_cursor(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+DBI_mysql::db_commit	dbi_mysql.cpp	/^int DBI_mysql::db_commit(void)\/\/提交$/;"	f	class:DBI_mysql	signature:(void)
+DBI_mysql::db_commit	dbi_mysql.h	/^	 int db_commit(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+DBI_mysql::db_connect	dbi_mysql.cpp	/^int DBI_mysql::db_connect(const char* host, const char* database, const char* usr, const char* pwd, int port)$/;"	f	class:DBI_mysql	signature:(const char* host, const char* database, const char* usr, const char* pwd, int port)
+DBI_mysql::db_connect	dbi_mysql.h	/^	int db_connect(const char* host, const char* database, const char* usr, const char* pwd, int port=0);$/;"	p	class:DBI_mysql	access:public	signature:(const char* host, const char* database, const char* usr, const char* pwd, int port=0)
+DBI_mysql::db_disconnect	dbi_mysql.cpp	/^void DBI_mysql::db_disconnect(void)\/\/断开$/;"	f	class:DBI_mysql	signature:(void)
+DBI_mysql::db_disconnect	dbi_mysql.h	/^	void db_disconnect(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+DBI_mysql::db_execute	dbi_mysql.cpp	/^int DBI_mysql::db_execute(const char* sql)\/\/执行sql语句$/;"	f	class:DBI_mysql	signature:(const char* sql)
+DBI_mysql::db_execute	dbi_mysql.cpp	/^int DBI_mysql::db_execute(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+DBI_mysql::db_execute	dbi_mysql.h	/^	 int db_execute(const char* sql);$/;"	p	class:DBI_mysql	access:public	signature:(const char* sql)
+DBI_mysql::db_execute	dbi_mysql.h	/^	 int db_execute(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+DBI_mysql::db_fetch	dbi_mysql.cpp	/^int DBI_mysql::db_fetch(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+DBI_mysql::db_fetch	dbi_mysql.cpp	/^int DBI_mysql::db_fetch(void)\/\/获取结果集$/;"	f	class:DBI_mysql	signature:(void)
+DBI_mysql::db_fetch	dbi_mysql.h	/^	 int db_fetch(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+DBI_mysql::db_fetch	dbi_mysql.h	/^	 int db_fetch(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+DBI_mysql::db_free_sql	dbi_mysql.cpp	/^int DBI_mysql::db_free_sql(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+DBI_mysql::db_free_sql	dbi_mysql.h	/^	 int db_free_sql(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+DBI_mysql::db_get_affected_rows	dbi_mysql.cpp	/^int DBI_mysql::db_get_affected_rows(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+DBI_mysql::db_get_affected_rows	dbi_mysql.h	/^	 int db_get_affected_rows(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+DBI_mysql::db_get_error	dbi_mysql.cpp	/^void DBI_mysql::db_get_error()$/;"	f	class:DBI_mysql	signature:()
+DBI_mysql::db_get_error	dbi_mysql.h	/^    void db_get_error(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t *q, int pos, double& val, dbi_flag_t *flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t *q, int pos, double& val, dbi_flag_t *flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, DBI_DATE& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, DBI_DATE& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, char* val, int size, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, char* val, int size, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, float& val, dbi_flag_t *flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, float& val, dbi_flag_t *flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, int& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, int& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, long long& val, dbi_flag_t *flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, long long& val, dbi_flag_t *flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, long& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, long& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, short& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, short& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, unsigned int& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned int& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, unsigned long long& val, dbi_flag_t *flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned long long& val, dbi_flag_t *flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, unsigned long& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned long& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, unsigned short& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned short& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, void* buf, unsigned long bufsize, unsigned long& readed, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, void* buf, unsigned long bufsize, unsigned long& readed, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, DBI_DATE& val)$/;"	f	class:DBI_mysql	signature:(int pos, DBI_DATE& val)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, char* val, int size)\/\/获取字段$/;"	f	class:DBI_mysql	signature:(int pos, char* val, int size)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, double& val)$/;"	f	class:DBI_mysql	signature:(int pos, double& val)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, float& val)$/;"	f	class:DBI_mysql	signature:(int pos, float& val)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, int& val)$/;"	f	class:DBI_mysql	signature:(int pos, int& val)
+DBI_mysql::db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, long long& val)$/;"	f	class:DBI_mysql	signature:(int pos, long long& val)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, DBI_DATE& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, DBI_DATE& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, char* val, int size, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, char* val, int size, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, double& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, double& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, float& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, float& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, int& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, int& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, long long& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long long& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, long& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, short& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, short& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, unsigned int& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned int& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, unsigned long long& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned long long& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, unsigned long& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned long& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, unsigned short& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned short& val, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, void* buf, unsigned long bufsize, unsigned long& readed, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, void* buf, unsigned long bufsize, unsigned long& readed, dbi_flag_t* flag)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, DBI_DATE& val);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, DBI_DATE& val)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, char* val, int size);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, char* val, int size)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, double& val);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, double& val)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, float& val);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, float& val)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, int& val);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, int& val)
+DBI_mysql::db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, long long& val);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, long long& val)
+DBI_mysql::db_get_incolumns	dbi_mysql.cpp	/^int DBI_mysql::db_get_incolumns(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+DBI_mysql::db_get_incolumns	dbi_mysql.h	/^	 int db_get_incolumns(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+DBI_mysql::db_get_null_flag	dbi_mysql.cpp	/^int DBI_mysql::db_get_null_flag(dbi_prepare_t* q, int pos, dbi_flag_t *flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, dbi_flag_t *flag)
+DBI_mysql::db_get_null_flag	dbi_mysql.h	/^	 int db_get_null_flag(dbi_prepare_t* q, int  pos, dbi_flag_t *flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, dbi_flag_t *flag)
+DBI_mysql::db_get_outcolumns	dbi_mysql.cpp	/^int DBI_mysql::db_get_outcolumns(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+DBI_mysql::db_get_outcolumns	dbi_mysql.h	/^	 int db_get_outcolumns(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+DBI_mysql::db_lock_wait	dbi_mysql.cpp	/^int DBI_mysql::db_lock_wait(int secs)\/\/给表上锁$/;"	f	class:DBI_mysql	signature:(int secs)
+DBI_mysql::db_lock_wait	dbi_mysql.h	/^	 int db_lock_wait(int secs);$/;"	p	class:DBI_mysql	access:public	signature:(int secs)
+DBI_mysql::db_next	dbi_mysql.cpp	/^bool DBI_mysql::db_next(void)\/\/获取一行行取记录集$/;"	f	class:DBI_mysql	signature:(void)
+DBI_mysql::db_next	dbi_mysql.h	/^	 bool db_next(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+DBI_mysql::db_prepare_sql	dbi_mysql.cpp	/^int DBI_mysql::db_prepare_sql(dbi_prepare_t* q, const char* sql)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, const char* sql)
+DBI_mysql::db_prepare_sql	dbi_mysql.h	/^	 int db_prepare_sql(dbi_prepare_t* q, const char* sql);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, const char* sql)
+DBI_mysql::db_rollback	dbi_mysql.cpp	/^int DBI_mysql::db_rollback(void)\/\/回滚$/;"	f	class:DBI_mysql	signature:(void)
+DBI_mysql::db_rollback	dbi_mysql.h	/^	 int db_rollback(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+DBI_mysql::db_set_null_flag	dbi_mysql.cpp	/^int DBI_mysql::db_set_null_flag(dbi_prepare_t* q, int pos, dbi_flag_t iflag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, dbi_flag_t iflag)
+DBI_mysql::db_set_null_flag	dbi_mysql.h	/^	 int db_set_null_flag(dbi_prepare_t* q, int  pos, dbi_flag_t iflag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, dbi_flag_t iflag)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t *q, int pos, double val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t *q, int pos, double val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t *q, int pos, float val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t *q, int pos, float val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t *q, int pos, long long val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t *q, int pos, long long val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t *q, int pos, unsigned long long val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t *q, int pos, unsigned long long val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, const DBI_DATE& val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, const DBI_DATE& val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, const char* val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, const char* val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, const char* val, int size, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, const char* val, int size, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, int val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, int val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, long val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, long val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, short val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, short val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, unsigned int val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned int val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, unsigned long val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned long val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, unsigned short val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned short val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, void* val, int size, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, void* val, int size, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, const DBI_DATE& val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, const DBI_DATE& val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, const char* val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, const char* val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, const char* val, int size, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, const char* val, int size, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, double val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, double val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, float val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, float val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, int val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, int val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, long long val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long long val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, long val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, short val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, short val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, unsigned int val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned int val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, unsigned long long val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned long long val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, unsigned long val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned long val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, unsigned short val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned short val, bool is_null)
+DBI_mysql::db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, void* val, int size, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, void* val, int size, bool is_null)
+DBI_mysql::err_msg	dbi_mysql.h	/^	char err_msg[1024];$/;"	m	class:DBI_mysql	access:private
+DBI_mysql::~DBI_mysql	dbi_mysql.cpp	/^DBI_mysql::~DBI_mysql(void)$/;"	f	class:DBI_mysql	signature:(void)
+DBI_mysql::~DBI_mysql	dbi_mysql.h	/^	~DBI_mysql(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+EXE	makefile	/^EXE=.\/test$/;"	m
+INCL	makefile	/^INCL=-I\/usr\/include\/mysql -I.\/$/;"	m
+LIB	makefile	/^LIB=-L\/usr\/lib\/x86_64-linux-gnu -lmysqlclient -static -lpthread -ldl -lz$/;"	m
+OBJS	makefile	/^OBJS = $(patsubst %.cpp,%.o,$(SRCS))$/;"	m
+SRCS	makefile	/^SRCS = $(wildcard *.cpp)$/;"	m
+__DBIMYSQL_H__	dbi_mysql.h	3;"	d
+_conn	dbi_mysql.h	/^	MYSQL*		_conn;$/;"	m	class:DBI_mysql	access:private
+_dbi_date	dbi_mysql.h	/^typedef struct _dbi_date$/;"	s
+_dbi_date::day	dbi_mysql.h	/^	unsigned short day;$/;"	m	struct:_dbi_date	access:public
+_dbi_date::frac	dbi_mysql.h	/^	unsigned short frac;$/;"	m	struct:_dbi_date	access:public
+_dbi_date::hour	dbi_mysql.h	/^	unsigned short hour;$/;"	m	struct:_dbi_date	access:public
+_dbi_date::minute	dbi_mysql.h	/^	unsigned short minute;$/;"	m	struct:_dbi_date	access:public
+_dbi_date::month	dbi_mysql.h	/^	unsigned short month;$/;"	m	struct:_dbi_date	access:public
+_dbi_date::second	dbi_mysql.h	/^	unsigned short second;$/;"	m	struct:_dbi_date	access:public
+_dbi_date::year	dbi_mysql.h	/^	unsigned short year;$/;"	m	struct:_dbi_date	access:public
+_res	dbi_mysql.h	/^	MYSQL_RES*	_res;$/;"	m	class:DBI_mysql	access:private
+_row	dbi_mysql.h	/^	MYSQL_ROW	_row;$/;"	m	class:DBI_mysql	access:private
+_stmt	dbi_mysql.h	/^	MYSQL_STMT* _stmt;$/;"	m	class:DBI_mysql	access:private
+bind_input	dbi_mysql.h	/^	MYSQL_BIND*		bind_input;$/;"	m	struct:mysql_preparement	access:public
+bind_output	dbi_mysql.h	/^	MYSQL_BIND*		bind_output;$/;"	m	struct:mysql_preparement	access:public
+clearerr	dbi_mysql.cpp	/^inline void DBI_mysql::clearerr(void)$/;"	f	class:DBI_mysql	signature:(void)
+clearerr	dbi_mysql.h	/^	void clearerr(void);$/;"	p	class:DBI_mysql	access:private	signature:(void)
+day	dbi_mysql.h	/^	unsigned short day;$/;"	m	struct:_dbi_date	access:public
+db_autocommit	dbi_mysql.cpp	/^bool DBI_mysql::db_autocommit(bool flag)\/\/批控制自动提交（可设置是否能自动提交）$/;"	f	class:DBI_mysql	signature:(bool flag)
+db_autocommit	dbi_mysql.h	/^	 bool db_autocommit(bool flag);$/;"	p	class:DBI_mysql	access:public	signature:(bool flag)
+db_begin	dbi_mysql.cpp	/^int DBI_mysql::db_begin(void)\/\/设置是否自动提交$/;"	f	class:DBI_mysql	signature:(void)
+db_begin	dbi_mysql.h	/^	 int db_begin(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, DBI_DATE*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, DBI_DATE*& val)
+db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, char*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, char*& val)
+db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, double*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, double*& val)
+db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, float*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, float*& val)
+db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, int*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, int*& val)
+db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, long int*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, long int*& val)
+db_bind_param	dbi_mysql.cpp	/^int DBI_mysql::db_bind_param(dbi_prepare_t* q, int pos, long long*& val)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, long long*& val)
+db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, DBI_DATE*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, DBI_DATE*& val)
+db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, char*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, char*& val)
+db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, double*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, double*& val)
+db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, float*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, float*& val)
+db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, int*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, int*& val)
+db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, long int*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long int*& val)
+db_bind_param	dbi_mysql.h	/^	 int db_bind_param(dbi_prepare_t* q, int pos, long long*& val);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long long*& val)
+db_close_cursor	dbi_mysql.cpp	/^int DBI_mysql::db_close_cursor(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+db_close_cursor	dbi_mysql.cpp	/^void DBI_mysql::db_close_cursor(void)$/;"	f	class:DBI_mysql	signature:(void)
+db_close_cursor	dbi_mysql.h	/^	 int db_close_cursor(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+db_close_cursor	dbi_mysql.h	/^	 void db_close_cursor(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+db_commit	dbi_mysql.cpp	/^int DBI_mysql::db_commit(void)\/\/提交$/;"	f	class:DBI_mysql	signature:(void)
+db_commit	dbi_mysql.h	/^	 int db_commit(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+db_connect	dbi_mysql.cpp	/^int DBI_mysql::db_connect(const char* host, const char* database, const char* usr, const char* pwd, int port)$/;"	f	class:DBI_mysql	signature:(const char* host, const char* database, const char* usr, const char* pwd, int port)
+db_connect	dbi_mysql.h	/^	int db_connect(const char* host, const char* database, const char* usr, const char* pwd, int port=0);$/;"	p	class:DBI_mysql	access:public	signature:(const char* host, const char* database, const char* usr, const char* pwd, int port=0)
+db_disconnect	dbi_mysql.cpp	/^void DBI_mysql::db_disconnect(void)\/\/断开$/;"	f	class:DBI_mysql	signature:(void)
+db_disconnect	dbi_mysql.h	/^	void db_disconnect(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+db_execute	dbi_mysql.cpp	/^int DBI_mysql::db_execute(const char* sql)\/\/执行sql语句$/;"	f	class:DBI_mysql	signature:(const char* sql)
+db_execute	dbi_mysql.cpp	/^int DBI_mysql::db_execute(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+db_execute	dbi_mysql.h	/^	 int db_execute(const char* sql);$/;"	p	class:DBI_mysql	access:public	signature:(const char* sql)
+db_execute	dbi_mysql.h	/^	 int db_execute(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+db_fetch	dbi_mysql.cpp	/^int DBI_mysql::db_fetch(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+db_fetch	dbi_mysql.cpp	/^int DBI_mysql::db_fetch(void)\/\/获取结果集$/;"	f	class:DBI_mysql	signature:(void)
+db_fetch	dbi_mysql.h	/^	 int db_fetch(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+db_fetch	dbi_mysql.h	/^	 int db_fetch(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+db_free_sql	dbi_mysql.cpp	/^int DBI_mysql::db_free_sql(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+db_free_sql	dbi_mysql.h	/^	 int db_free_sql(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+db_get_affected_rows	dbi_mysql.cpp	/^int DBI_mysql::db_get_affected_rows(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+db_get_affected_rows	dbi_mysql.h	/^	 int db_get_affected_rows(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+db_get_error	dbi_mysql.cpp	/^void DBI_mysql::db_get_error()$/;"	f	class:DBI_mysql	signature:()
+db_get_error	dbi_mysql.h	/^    void db_get_error(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t *q, int pos, double& val, dbi_flag_t *flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t *q, int pos, double& val, dbi_flag_t *flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, DBI_DATE& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, DBI_DATE& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, char* val, int size, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, char* val, int size, dbi_flag_t* flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, float& val, dbi_flag_t *flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, float& val, dbi_flag_t *flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, int& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, int& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, long long& val, dbi_flag_t *flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, long long& val, dbi_flag_t *flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, long& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, long& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, short& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, short& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, unsigned int& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned int& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, unsigned long long& val, dbi_flag_t *flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned long long& val, dbi_flag_t *flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, unsigned long& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned long& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, unsigned short& val, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned short& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(dbi_prepare_t* q, int pos, void* buf, unsigned long bufsize, unsigned long& readed, dbi_flag_t* flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, void* buf, unsigned long bufsize, unsigned long& readed, dbi_flag_t* flag)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, DBI_DATE& val)$/;"	f	class:DBI_mysql	signature:(int pos, DBI_DATE& val)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, char* val, int size)\/\/获取字段$/;"	f	class:DBI_mysql	signature:(int pos, char* val, int size)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, double& val)$/;"	f	class:DBI_mysql	signature:(int pos, double& val)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, float& val)$/;"	f	class:DBI_mysql	signature:(int pos, float& val)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, int& val)$/;"	f	class:DBI_mysql	signature:(int pos, int& val)
+db_get_field	dbi_mysql.cpp	/^int DBI_mysql::db_get_field(int pos, long long& val)$/;"	f	class:DBI_mysql	signature:(int pos, long long& val)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, DBI_DATE& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, DBI_DATE& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, char* val, int size, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, char* val, int size, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, double& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, double& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, float& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, float& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, int& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, int& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, long long& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long long& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, long& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, short& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, short& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, unsigned int& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned int& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, unsigned long long& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned long long& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, unsigned long& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned long& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, unsigned short& val, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned short& val, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(dbi_prepare_t* q, int pos, void* buf, unsigned long bufsize, unsigned long& readed, dbi_flag_t* flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, void* buf, unsigned long bufsize, unsigned long& readed, dbi_flag_t* flag)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, DBI_DATE& val);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, DBI_DATE& val)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, char* val, int size);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, char* val, int size)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, double& val);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, double& val)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, float& val);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, float& val)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, int& val);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, int& val)
+db_get_field	dbi_mysql.h	/^	 int db_get_field(int pos, long long& val);$/;"	p	class:DBI_mysql	access:public	signature:(int pos, long long& val)
+db_get_incolumns	dbi_mysql.cpp	/^int DBI_mysql::db_get_incolumns(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+db_get_incolumns	dbi_mysql.h	/^	 int db_get_incolumns(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+db_get_null_flag	dbi_mysql.cpp	/^int DBI_mysql::db_get_null_flag(dbi_prepare_t* q, int pos, dbi_flag_t *flag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, dbi_flag_t *flag)
+db_get_null_flag	dbi_mysql.h	/^	 int db_get_null_flag(dbi_prepare_t* q, int  pos, dbi_flag_t *flag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, dbi_flag_t *flag)
+db_get_outcolumns	dbi_mysql.cpp	/^int DBI_mysql::db_get_outcolumns(dbi_prepare_t* q)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q)
+db_get_outcolumns	dbi_mysql.h	/^	 int db_get_outcolumns(dbi_prepare_t* q);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q)
+db_lock_wait	dbi_mysql.cpp	/^int DBI_mysql::db_lock_wait(int secs)\/\/给表上锁$/;"	f	class:DBI_mysql	signature:(int secs)
+db_lock_wait	dbi_mysql.h	/^	 int db_lock_wait(int secs);$/;"	p	class:DBI_mysql	access:public	signature:(int secs)
+db_next	dbi_mysql.cpp	/^bool DBI_mysql::db_next(void)\/\/获取一行行取记录集$/;"	f	class:DBI_mysql	signature:(void)
+db_next	dbi_mysql.h	/^	 bool db_next(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+db_prepare_sql	dbi_mysql.cpp	/^int DBI_mysql::db_prepare_sql(dbi_prepare_t* q, const char* sql)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, const char* sql)
+db_prepare_sql	dbi_mysql.h	/^	 int db_prepare_sql(dbi_prepare_t* q, const char* sql);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, const char* sql)
+db_rollback	dbi_mysql.cpp	/^int DBI_mysql::db_rollback(void)\/\/回滚$/;"	f	class:DBI_mysql	signature:(void)
+db_rollback	dbi_mysql.h	/^	 int db_rollback(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)
+db_set_null_flag	dbi_mysql.cpp	/^int DBI_mysql::db_set_null_flag(dbi_prepare_t* q, int pos, dbi_flag_t iflag)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, dbi_flag_t iflag)
+db_set_null_flag	dbi_mysql.h	/^	 int db_set_null_flag(dbi_prepare_t* q, int  pos, dbi_flag_t iflag);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, dbi_flag_t iflag)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t *q, int pos, double val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t *q, int pos, double val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t *q, int pos, float val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t *q, int pos, float val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t *q, int pos, long long val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t *q, int pos, long long val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t *q, int pos, unsigned long long val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t *q, int pos, unsigned long long val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, const DBI_DATE& val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, const DBI_DATE& val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, const char* val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, const char* val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, const char* val, int size, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, const char* val, int size, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, int val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, int val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, long val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, long val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, short val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, short val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, unsigned int val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned int val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, unsigned long val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned long val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, unsigned short val, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, unsigned short val, bool is_null)
+db_set_param	dbi_mysql.cpp	/^int DBI_mysql::db_set_param(dbi_prepare_t* q, int pos, void* val, int size, bool is_null)$/;"	f	class:DBI_mysql	signature:(dbi_prepare_t* q, int pos, void* val, int size, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, const DBI_DATE& val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, const DBI_DATE& val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, const char* val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, const char* val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, const char* val, int size, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, const char* val, int size, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, double val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, double val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, float val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, float val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, int val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, int val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, long long val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long long val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, long val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, long val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, short val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, short val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, unsigned int val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned int val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, unsigned long long val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned long long val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, unsigned long val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned long val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, unsigned short val, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, unsigned short val, bool is_null)
+db_set_param	dbi_mysql.h	/^	 int db_set_param(dbi_prepare_t* q, int pos, void* val, int size, bool is_null);$/;"	p	class:DBI_mysql	access:public	signature:(dbi_prepare_t* q, int pos, void* val, int size, bool is_null)
+dbi_flag_t	dbi_mysql.h	/^} dbi_flag_t;$/;"	t	typeref:enum:DBI_FLAG_TYPE
+dbi_prepare_t	dbi_mysql.h	/^	dbi_prepare_t() { p_query = 0;}$/;"	f	struct:dbi_prepare_t	access:public	signature:()
+dbi_prepare_t	dbi_mysql.h	/^typedef struct dbi_prepare_t$/;"	s
+dbi_prepare_t	dbi_mysql.h	/^} dbi_prepare_t;$/;"	t	typeref:struct:dbi_prepare_t
+dbi_prepare_t::dbi_prepare_t	dbi_mysql.h	/^	dbi_prepare_t() { p_query = 0;}$/;"	f	struct:dbi_prepare_t	access:public	signature:()
+dbi_prepare_t::p_query	dbi_mysql.h	/^	void* p_query;$/;"	m	struct:dbi_prepare_t	access:public
+dbi_ret_code	dbi_mysql.h	/^typedef enum dbi_ret_code$/;"	g
+err_msg	dbi_mysql.h	/^	char err_msg[1024];$/;"	m	class:DBI_mysql	access:private
+field_count	dbi_mysql.h	/^	int field_count;$/;"	m	struct:mysql_preparement	access:public
+frac	dbi_mysql.h	/^	unsigned short frac;$/;"	m	struct:_dbi_date	access:public
+hour	dbi_mysql.h	/^	unsigned short hour;$/;"	m	struct:_dbi_date	access:public
+main	test.cpp	/^int main()$/;"	f	signature:()
+minute	dbi_mysql.h	/^	unsigned short minute;$/;"	m	struct:_dbi_date	access:public
+month	dbi_mysql.h	/^	unsigned short month;$/;"	m	struct:_dbi_date	access:public
+mysql_preparement	dbi_mysql.h	/^struct mysql_preparement$/;"	s
+mysql_preparement::bind_input	dbi_mysql.h	/^	MYSQL_BIND*		bind_input;$/;"	m	struct:mysql_preparement	access:public
+mysql_preparement::bind_output	dbi_mysql.h	/^	MYSQL_BIND*		bind_output;$/;"	m	struct:mysql_preparement	access:public
+mysql_preparement::field_count	dbi_mysql.h	/^	int field_count;$/;"	m	struct:mysql_preparement	access:public
+mysql_preparement::param_count	dbi_mysql.h	/^	int param_count;$/;"	m	struct:mysql_preparement	access:public
+mysql_preparement::stmt	dbi_mysql.h	/^	MYSQL_STMT*		stmt;$/;"	m	struct:mysql_preparement	access:public
+p_query	dbi_mysql.h	/^	void* p_query;$/;"	m	struct:dbi_prepare_t	access:public
+param_count	dbi_mysql.h	/^	int param_count;$/;"	m	struct:mysql_preparement	access:public
+second	dbi_mysql.h	/^	unsigned short second;$/;"	m	struct:_dbi_date	access:public
+stmt	dbi_mysql.h	/^	MYSQL_STMT*		stmt;$/;"	m	struct:mysql_preparement	access:public
+year	dbi_mysql.h	/^	unsigned short year;$/;"	m	struct:_dbi_date	access:public
+~DBI_mysql	dbi_mysql.cpp	/^DBI_mysql::~DBI_mysql(void)$/;"	f	class:DBI_mysql	signature:(void)
+~DBI_mysql	dbi_mysql.h	/^	~DBI_mysql(void);$/;"	p	class:DBI_mysql	access:public	signature:(void)

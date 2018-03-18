@@ -3,8 +3,28 @@ create table Users
     Username varchar(16) not null unique,
     Password varchar(16) not null,
     Nickname varchar(16) not null,
+    Birthday date,
+    Logintime date,
+    Usex enum('T','F'),/*T代表男，F代表女*/
+    PhoneNumber char(11),
     RegistTime timestamp not null default now(),
     Effective int not null default 1)default charset = utf8;
+
+create table SignIn(
+    Sid int auto_increment primary key,
+    Uid nchar(16),
+    SignInIP nchar(16) default '127.0.0.1',
+    SignInTime nchar(14),
+    remark nvarchar(300) default ' ',
+    foreign key(UID) references usertable(UID) on delete cascade on update cascade
+);
+
+
+create table UserPacket(
+    UID nchar(16) primary key,
+    Packet double DEFAULT 0
+    foreign key(UID) references usertable(UID) on delete cascade on update cascade
+);
 
 
 create table Friends
@@ -19,23 +39,47 @@ create table Friends
 
 
 create table Groups
-    (Gid varchar(16) not null primary key,
+    (
+    Gid varchar(16) not null primary key,
     Gname varchar(16) not null，
     Gowner int not null，
+    GSetTime date,
     constraint Uid_o foreign key(Gowner) references Users(Uid) 
     )default charset = utf8;
 
 
 
 create table Gmember                                                        
-    (Gid varchar(16) not null,
+    (
+    Gid varchar(16) not null,
     Uid int not null,
     primary key(Gid,Uid),
     constraint Gid_f foreign key(Gid) references Groups(Gid),
     constraint Uid_f foreign key(Uid) references Users(Uid)
     )default charset = utf8;
 
+create table FriendMessage(
+    FriMesID int auto_increment primary key,
+    UID nchar(16),
+    FID nchar(16),
+    Message nvarchar(300),
+    SendTime datetime,
+    remark varchar(200),
+    foreign key(UID) references usertable(UID) on delete cascade on update cascade,
+    foreign key(FID) references usertable(UID) on delete cascade on update cascade
 
+);
+create table GroupMessage(
+    GroMesID int auto_increment primary key,
+    UID nchar(16),
+    GID int,
+    Message nvarchar(300),
+    SendTime datetime,
+    remark varchar(200),
+    foreign key(UID) references usertable(UID) on delete cascade on update cascade,
+    foreign key(GID) references grouptable(GID) on delete cascade on update cascade
+
+);
 
 create table RedPacket
     (Rid int not null auto_increment pnrimary key,
